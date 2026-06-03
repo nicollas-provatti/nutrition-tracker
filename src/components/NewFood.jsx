@@ -1,15 +1,14 @@
+import Card from "./Card";
 import MealType from "./MealType";
 import { foods } from "../data/foods";
 import { LuNotebookPen, LuPlus } from "react-icons/lu";
 
 function NewFood() {
   return (
-    <div className="max-w-7xl m-auto bg-white border-gray-200 shadow-sm rounded-lg mt-10 p-6">
-      <h2 className="flex items-center gap-2 text-xl font-semibold mb-4">
-        <LuNotebookPen color="#2b7fff" size={24} />
-        Registrar Alimentos
-      </h2>
-
+    <Card
+      icon={<LuNotebookPen color="#2b7fff" size={20} />}
+      title="Registrar Alimentos"
+    >
       <MealType />
 
       <div className="flex flex-col gap-4 md:flex-row">
@@ -48,8 +47,9 @@ function NewFood() {
           <LuPlus size={24} />
         </button>
       </div>
-    </div>
+    </Card>
   );
 }
 
 export default NewFood;
+
