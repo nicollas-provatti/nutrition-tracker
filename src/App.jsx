@@ -1,17 +1,20 @@
 import Header from "./components/Header";
 import NutritionSummary from "./components/NutritionSummary";
 import NewMeal from "./components/NewFood";
-import MealsToday from "./components/Meals";
+import Meals from "./components/Meals";
 import Footer from "./components/Footer";
+import FoodsContextProvider from "./context/foods-provider";
 
 function App() {
   return (
     <>
       <Header />
       <main className="px-4">
-        <NutritionSummary />
-        <NewMeal />
-        <MealsToday />
+        <FoodsContextProvider>
+          <NutritionSummary />
+          <NewMeal />
+          <Meals />
+        </FoodsContextProvider>
       </main>
       <Footer />
     </>
