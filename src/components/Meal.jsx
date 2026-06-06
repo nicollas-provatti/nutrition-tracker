@@ -13,7 +13,7 @@ function Meal({ icon, meal, calories, type, foods }) {
       <div className="flex items-center gap-2 mb-3">
         <div className={`p-2 rounded-lg ${mealStyles[type]}`}>{icon}</div>
         <h3 className="font-semibold">{meal}</h3>
-        <p className="text-sm text-gray-500">({calories} kcal)</p>
+        <p className="text-sm text-gray-500">({calories.toFixed(1)} kcal)</p>
       </div>
 
       {foods.length === 0 && (

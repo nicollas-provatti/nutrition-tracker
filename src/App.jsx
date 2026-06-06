@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="px-4">
+      <main className="min-h-[calc(100vh-196px)] px-4">
         <FoodsContextProvider>
           <NutritionSummary />
           <NewMeal />

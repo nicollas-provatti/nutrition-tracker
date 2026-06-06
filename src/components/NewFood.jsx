@@ -18,6 +18,13 @@ function NewFood() {
     setChosenMeal(mealType);
   }
 
+  function pressEnter(event) {
+    if (event.key === "Enter") {
+      handleRegisterFood();
+      qtd.current.blur();
+    }
+  }
+
   function handleRegisterFood() {
     const food = foods[fd.current.value];
 
@@ -25,6 +32,7 @@ function NewFood() {
     const fator = quantity / 100;
 
     const newFood = {
+      id: crypto.randomUUID(),
       mealType: chosenMeal,
       name: food.name,
       quantity,
@@ -78,6 +86,7 @@ function NewFood() {
             required
             placeholder="Em gramas (ex.: 100)"
             title="Must be between be 1 to 10"
+            onKeyDown={pressEnter}
           />
         </div>
 

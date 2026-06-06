@@ -1,19 +1,14 @@
 export const foods = [
   {
+    id: crypto.randomUUID(),
     name: "Pão de forma",
-    kcal: 65,
-    protein: 2,
-    fat: 1,
-    carb: 12,
+    kcal: 255,
+    protein: 8.3,
+    fat: 2,
+    carb: 51,
   },
   {
-    name: "Pão seda",
-    kcal: 276,
-    protein: 9.4,
-    fat: 0,
-    carb: 58,
-  },
-  {
+    id: crypto.randomUUID(),
     name: "Manteiga",
     kcal: 747,
     protein: 0,
@@ -21,6 +16,7 @@ export const foods = [
     carb: 0,
   },
   {
+    id: crypto.randomUUID(),
     name: "Goma de tapioca",
     kcal: 220,
     protein: 0,
@@ -35,6 +31,7 @@ export const foods = [
     carb: 20,
   },
   {
+    id: crypto.randomUUID(),
     name: "Requeijão",
     kcal: 255,
     protein: 9,
@@ -49,6 +46,7 @@ export const foods = [
     carb: 23,
   },
   {
+    id: crypto.randomUUID(),
     name: "Manga",
     kcal: 65,
     protein: 1.2,
@@ -56,30 +54,23 @@ export const foods = [
     carb: 17,
   },
   {
-    name: "Ovo inteiro cozido",
-
-    kcal: 72,
-    protein: 6.3,
-    fat: 5,
-    carb: 0.4,
+    id: crypto.randomUUID(),
+    name: "Ovo cozido",
+    kcal: 146,
+    protein: 13,
+    fat: 9.5,
+    carb: 0.6,
   },
   {
-    name: "Ovo só a clara cozido",
-
-    kcal: 17,
-    protein: 3.6,
-    fat: 0.0,
-    carb: 0.2,
-  },
-  {
+    id: crypto.randomUUID(),
     name: "Ovo mexido",
-
-    kcal: 72,
-    protein: 6.3,
-    fat: 5,
-    carb: 0.4,
+    kcal: 157,
+    protein: 12,
+    fat: 14,
+    carb: 1,
   },
   {
+    id: crypto.randomUUID(),
     name: "Frango cru",
     kcal: 119,
     protein: 21.5,
@@ -87,6 +78,7 @@ export const foods = [
     carb: 0,
   },
   {
+    id: crypto.randomUUID(),
     name: "Frango grelhado",
     kcal: 156,
     protein: 31,
@@ -94,6 +86,7 @@ export const foods = [
     carb: 0,
   },
   {
+    id: crypto.randomUUID(),
     name: "Arroz parboilizado cozido",
     kcal: 125,
     protein: 2.5,
@@ -101,6 +94,7 @@ export const foods = [
     carb: 28,
   },
   {
+    id: crypto.randomUUID(),
     name: "Feijão carioca cozido",
     kcal: 80,
     protein: 4.8,

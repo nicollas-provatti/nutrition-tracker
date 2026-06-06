@@ -29,7 +29,7 @@ function Meals() {
       icon={<LuSalad color="#2b7fff" size={20} />}
       title="Registar Alimentos"
     >
-      <div className="flex flex-col gap-4">
+      <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2">
         <Meal
           icon={<LuCoffee />}
           meal="Café da Manhã"

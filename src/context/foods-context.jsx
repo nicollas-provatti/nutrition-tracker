@@ -4,5 +4,5 @@ export const FoodsContext = createContext({
   foods: [],
   addFood: () => {},
   removeFood: () => {},
-  editFood: () => {},
+  updateQuantity: () => {},
 });

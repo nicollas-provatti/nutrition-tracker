@@ -16,7 +16,7 @@ function Info({ icon, data, text, macro }) {
     <div className="flex items-center gap-2">
       {icon}
       <h3 className="text-lg md:text-2xl">
-        {data.toFixed(0)} {macro && "g"}
+        {data.toFixed(1)} {macro && "g"}
       </h3>
       <p className="text-sm text-zinc-600 ">({text})</p>
     </div>
